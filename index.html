@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jollybot — $JOLLY | the musebook mascot</title>
+  <meta name="description" content="Jollybot ($JOLLY) — the musebook mascot. Trade on Uniswap Robinhood Chain." />
+  <link rel="icon" href="logo.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" id="scroll-progress" aria-hidden="true"></div>
+  <div class="mesh" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-blob" id="cursor-blob" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="nav-brand" href="#top">
+      <img src="logo.jpg" alt="Jollybot logo" width="40" height="40" />
+      <span>Jollybot</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#how-to-buy">How to Buy</a>
+      <a href="#join">Join Us</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="https://x.com/jollybotmuse_" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a class="btn btn-primary magnetic" href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xComingSoon" target="_blank" rel="noopener noreferrer">Buy $JOLLY</a>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#about">About</a>
+    <a href="#how-to-buy">How to Buy</a>
+    <a href="#join">Join Us</a>
+    <a href="https://x.com/jollybotmuse_" target="_blank" rel="noopener noreferrer">Twitter</a>
+    <a class="btn btn-primary" href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xComingSoon" target="_blank" rel="noopener noreferrer">Buy $JOLLY</a>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="banner.jpg" alt="" id="hero-img" />
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-brand reveal">
+          <img class="logo-float" src="logo.jpg" alt="" width="72" height="72" />
+          <h1 class="title- ent" data-text="Jollybot">Jollybot</h1>
+        </div>
+        <p class="hero-tagline reveal delay-1">the musebook mascot</p>
+        <p class="hero-symbol reveal delay-2">$JOLLY · Robinhood Chain</p>
+        <div class="hero-cta reveal delay-3">
+          <a class="btn btn-primary btn-lg magnetic shine" href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xComingSoon" target="_blank" rel="noopener noreferrer">Buy on Uniswap</a>
+          <a class="btn btn-on-dark btn-lg magnetic" href="https://x.com/jollybotmuse_" target="_blank" rel="noopener noreferrer">Follow on X</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>$JOLLY</span><span>Robinhood Chain</span><span>Uniswap</span><span>the musebook mascot</span><span>Jollybot</span>
+        <span>$JOLLY</span><span>Robinhood Chain</span><span>Uniswap</span><span>the musebook mascot</span><span>Jollybot</span>
+      </div>
+    </div>
+
+    <section class="ca-bar">
+      <div class="ca-inner">
+        <span class="ca-label">Contract Address</span>
+        <code class="ca-value" id="ca-text">0xComingsoon</code>
+        <button class="btn btn-copy" type="button" id="copy-ca" aria-label="Copy contract address">Copy</button>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-inner">
+        <p class="eyebrow reveal">About</p>
+        <h2 class="reveal delay-1">Meet Jollybot</h2>
+        <p class="lead reveal delay-2">
+          Jollybot is the face of Muse — a soft, sunlit mascot for the musebook era.
+          $JOLLY lives on Robinhood Chain and trades on Uniswap.
+        </p>
+        <div class="about-grid reveal delay-3">
+          <figure class="about-visual tilt">
+            <img src="logo.jpg" alt="Jollybot mascot portrait" />
+          </figure>
+          <div class="about-copy">
+            <p>
+              Built for Robinhood Chain, Jollybot brings a friendly mascot energy to on-chain trading —
+              simple, bright, and ready to swap.
+            </p>
+            <ul class="facts">
+              <li><span>Token</span><strong>Jollybot</strong></li>
+              <li><span>Symbol</span><strong>$JOLLY</strong></li>
+              <li><span>Network</span><strong>Robinhood Chain</strong></li>
+              <li><span>DEX</span><strong>Uniswap</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how-to-buy">
+      <div class="section-inner">
+        <p class="eyebrow reveal">How to Buy</p>
+        <h2 class="reveal delay-1">Get $JOLLY in three steps</h2>
+        <p class="lead reveal delay-2">Trade natively on Uniswap for Robinhood Chain.</p>
+        <ol class="steps">
+          <li class="reveal step-item">
+            <span class="step-num">01</span>
+            <div>
+              <h3>Open Uniswap</h3>
+              <p>Go to Uniswap and connect a wallet that supports Robinhood Chain.</p>
+            </div>
+          </li>
+          <li class="reveal delay-1 step-item">
+            <span class="step-num">02</span>
+            <div>
+              <h3>Select Robinhood Chain</h3>
+              <p>Switch the network to Robinhood and keep native token as your input.</p>
+            </div>
+          </li>
+          <li class="reveal delay-2 step-item">
+            <span class="step-num">03</span>
+            <div>
+              <h3>Swap for $JOLLY</h3>
+              <p>Set output to Jollybot and confirm the swap when you’re ready.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="section-cta reveal delay-3">
+          <a class="btn btn-primary btn-lg magnetic shine" href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xComingSoon" target="_blank" rel="noopener noreferrer">Buy $JOLLY</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section join" id="join">
+      <div class="join-orbs" aria-hidden="true">
+        <span class="orb orb-a"></span>
+        <span class="orb orb-b"></span>
+        <span class="orb orb-c"></span>
+      </div>
+      <div class="section-inner join-inner">
+        <p class="eyebrow reveal">Join Us</p>
+        <h2 class="reveal delay-1">Come hang with Jollybot</h2>
+        <p class="lead reveal delay-2">
+          Follow for updates, drops, and musebook moments from the official account.
+        </p>
+        <a class="btn btn-primary btn-lg magnetic shine reveal delay-3" href="https://x.com/jollybotmuse_" target="_blank" rel="noopener noreferrer">
+          Follow @jollybotmuse_
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="nav-brand" href="#top">
+        <img src="logo.jpg" alt="" width="32" height="32" />
+        <span>Jollybot</span>
+      </a>
+      <p>$JOLLY · the musebook mascot · Robinhood Chain</p>
+      <p class="footer-ca">CA: 0xComingsoon</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
